@@ -1,405 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Review - Instagram Style</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        body {
-            background: #fafafa;
-            color: #262626;
-        }
-
-        /* Instagram Header */
-        header {
-            height: 60px;
-            background: white;
-            border-bottom: 1px solid #dbdbdb;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-
-        .logo {
-            font-family: cursive;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .header-icons {
-            display: flex;
-            gap: 20px;
-            font-size: 23px;
-        }
-
-        /* Main */
-        main {
-            max-width: 600px;
-            margin: 30px auto;
-        }
-
-        /* Post */
-        .post {
-            background: white;
-            border: 1px solid #dbdbdb;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        /* Profile */
-        .profile {
-            display: flex;
-            align-items: center;
-            padding: 14px;
-            gap: 12px;
-        }
-
-        .profile-pic {
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            padding: 2px;
-            background: linear-gradient(
-                45deg,
-                #feda75,
-                #fa7e1e,
-                #d62976,
-                #962fbf,
-                #4f5bd5
-            );
-        }
-
-        .profile-pic div {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            background: #222;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 18px;
-        }
-
-        .username {
-            font-weight: bold;
-        }
-
-        .more {
-            margin-left: auto;
-            font-size: 22px;
-        }
-
-        /* Video Preview */
-        .video {
-            height: 330px;
-            background: linear-gradient(
-                135deg,
-                #833ab4,
-                #fd1d1d,
-                #fcb045
-            );
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .video h2 {
-            font-size: 30px;
-            margin-bottom: 15px;
-        }
-
-        .play-button {
-            width: 65px;
-            height: 65px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.9);
-            color: #d62976;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            margin-bottom: 15px;
-            cursor: pointer;
-        }
-
-        .video p {
-            font-size: 15px;
-            opacity: 0.9;
-        }
-
-        /* Actions */
-        .actions {
-            display: flex;
-            align-items: center;
-            padding: 12px 14px 5px;
-            gap: 18px;
-            font-size: 25px;
-        }
-
-        .actions span {
-            cursor: pointer;
-        }
-
-        .save {
-            margin-left: auto;
-        }
-
-        /* Content */
-        .content {
-            padding: 5px 14px 18px;
-        }
-
-        .likes {
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-
-        .caption {
-            line-height: 1.5;
-            margin-bottom: 15px;
-        }
-
-        .caption strong {
-            margin-right: 5px;
-        }
-
-        .section-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin: 18px 0 10px;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-            line-height: 1.4;
-        }
-
-        /* Watch Button */
-        .watch-btn {
-            display: block;
-            text-align: center;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            padding: 12px;
-            margin-top: 18px;
-            border-radius: 8px;
-            background: linear-gradient(
-                45deg,
-                #feda75,
-                #fa7e1e,
-                #d62976,
-                #962fbf
-            );
-        }
-
-        .watch-btn:hover {
-            opacity: 0.9;
-        }
-
-        /* Conclusion */
-        .conclusion {
-            margin-top: 20px;
-            padding-top: 15px;
-            border-top: 1px solid #eee;
-        }
-
-        /* Mobile */
-        @media (max-width: 650px) {
-            main {
-                margin: 0 auto;
-            }
-
-            .post {
-                border-left: none;
-                border-right: none;
-                border-radius: 0;
-            }
-
-            .video {
-                height: 300px;
-            }
-
-            header {
-                padding: 0 15px;
-            }
-        }
-    </style>
+    <title>Video Review</title>
 </head>
 
 <body>
 
-    <!-- Instagram Header -->
-    <header>
-        <div class="logo">Instagram</div>
+    <h1>Video Review</h1>
 
-        <div class="header-icons">
-            <span>♡</span>
-            <span>✉</span>
-        </div>
-    </header>
+    <h2>True Scale of Data Storage</h2>
 
+    <p>
+        The video explains how much data is stored in the digital world.
+        It explains storage units like KB, MB, GB, TB, PB and EB.
+    </p>
 
-    <main>
+    <p>
+        The video shows how computers, mobile phones, social media
+        and data centres create and store huge amounts of data.
+    </p>
 
-        <!-- Instagram Post -->
-        <div class="post">
+    <p>
+        I found the video interesting and informative. It helped me
+        understand the importance of data storage in modern technology.
+    </p>
 
-            <!-- Profile -->
-            <div class="profile">
+    <h3>Video Link</h3>
 
-                <div class="profile-pic">
-                    <div>V</div>
-                </div>
+    <a href="https://youtu.be/i1SiWE7E48Q" target="_blank"> 
+        Watch the Video 
+    </a> 
+ 
+    <h3>Conclusion</h3> 
+ 
+    <p> 
+        Overall, the video gives a simple explanation of the huge 
+        amount of data stored around the world. 
+    </p> 
+ 
+</body> 
+</html> 
+ 
+ 
 
-                <div>
-                    <div class="username">video_review</div>
-                    <small>Video Review</small>
-                </div>
-
-                <div class="more">•••</div>
-
-            </div>
-
-
-            <!-- Video -->
-            <div class="video">
-
-                <div class="play-button">▶</div>
-
-                <h2>True Scale of Data Storage</h2>
-
-                <p>
-                    Understanding how much data the digital world stores
-                </p>
-
-            </div>
-
-
-            <!-- Instagram Actions -->
-            <div class="actions">
-
-                <span>♡</span>
-                <span>💬</span>
-                <span>➤</span>
-
-                <span class="save">🔖</span>
-
-            </div>
-
-
-            <!-- Post Content -->
-            <div class="content">
-
-                <div class="likes">
-                    128 likes
-                </div>
-
-                <div class="caption">
-                    <strong>video_review</strong>
-                    A simple and interesting look at the huge amount of
-                    data stored in today's digital world. 🌐💾
-                </div>
-
-
-                <div class="section-title">
-                    📊 True Scale of Data Storage
-                </div>
-
-                <ul>
-                    <li>
-                        The video explains the huge amount of data stored
-                        in the digital world.
-                    </li>
-
-                    <li>
-                        It explains storage units such as KB, MB, GB,
-                        TB, PB and EB.
-                    </li>
-
-                    <li>
-                        It shows how computers and mobile phones create
-                        and store data.
-                    </li>
-
-                    <li>
-                        Social media and websites also produce large
-                        amounts of data.
-                    </li>
-
-                    <li>
-                        Data centres are important for storing digital
-                        information.
-                    </li>
-
-                    <li>
-                        The video is simple, interesting and informative.
-                    </li>
-
-                    <li>
-                        It helped me understand the importance of
-                        data storage.
-                    </li>
-                </ul>
-
-
-                <!-- Video Link -->
-                <a
-                    class="watch-btn"
-                    href="https://youtu.be/i1SiWE7E48Q"
-                    target="_blank"
-                >
-                    ▶ Watch the Video
-                </a>
-
-
-                <!-- Conclusion -->
-                <div class="conclusion">
-
-                    <div class="section-title">
-                        💡 Conclusion
-                    </div>
-
-                    <ul>
-                        <li>
-                            The video gives a clear idea about the large
-                            scale of data storage.
-                        </li>
-
-                        <li>
-                            It shows why data storage is important in
-                            modern technology.
-                        </li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </main>
-
-</body>
-</html>
